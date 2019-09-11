@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513012A140C2F1A80FC56452 /* Pods_VietChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31D3ECC8665151C05137BCB /* Pods_VietChat.framework */; };
 		8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5A2328DC2200D7616C /* AppDelegate.swift */; };
 		8D84CD5D2328DC2200D7616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5C2328DC2200D7616C /* ViewController.swift */; };
 		8D84CD602328DC2200D7616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD5E2328DC2200D7616C /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */; };
 		8D84CD702328DC2400D7616C /* VietChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD6F2328DC2400D7616C /* VietChatTests.swift */; };
 		8D84CD7B2328DC2500D7616C /* VietChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */; };
+		8D84CD892328DEAC00D7616C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59B0BA8CD651C7B6F8D72FA0 /* Pods-VietChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VietChat.release.xcconfig"; path = "Target Support Files/Pods-VietChat/Pods-VietChat.release.xcconfig"; sourceTree = "<group>"; };
 		8D84CD572328DC2200D7616C /* VietChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VietChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD5A2328DC2200D7616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D84CD5C2328DC2200D7616C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		8D84CD762328DC2400D7616C /* VietChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietChatUITests.swift; sourceTree = "<group>"; };
 		8D84CD7C2328DC2500D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D32A8C0E383B07A201DB6F76 /* Pods-VietChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VietChat.debug.xcconfig"; path = "Target Support Files/Pods-VietChat/Pods-VietChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E31D3ECC8665151C05137BCB /* Pods_VietChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VietChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513012A140C2F1A80FC56452 /* Pods_VietChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,8 @@
 				8D84CD6E2328DC2400D7616C /* VietChatTests */,
 				8D84CD792328DC2400D7616C /* VietChatUITests */,
 				8D84CD582328DC2200D7616C /* Products */,
+				E080D3754103BAF877377882 /* Pods */,
+				DCAF9713FDBE718BA4F37F84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +111,7 @@
 				8D84CD5E2328DC2200D7616C /* Main.storyboard */,
 				8D84CD612328DC2400D7616C /* Assets.xcassets */,
 				8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */,
+				8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */,
 				8D84CD662328DC2400D7616C /* Info.plist */,
 			);
 			path = VietChat;
@@ -125,6 +135,24 @@
 			path = VietChatUITests;
 			sourceTree = "<group>";
 		};
+		DCAF9713FDBE718BA4F37F84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E31D3ECC8665151C05137BCB /* Pods_VietChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E080D3754103BAF877377882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D32A8C0E383B07A201DB6F76 /* Pods-VietChat.debug.xcconfig */,
+				59B0BA8CD651C7B6F8D72FA0 /* Pods-VietChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D84CD7F2328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChat" */;
 			buildPhases = (
+				01F99C0A32E6F191E2FDBEC6 /* [CP] Check Pods Manifest.lock */,
 				8D84CD532328DC2200D7616C /* Sources */,
 				8D84CD542328DC2200D7616C /* Frameworks */,
 				8D84CD552328DC2200D7616C /* Resources */,
+				1D2E83C4E41B68219A967EFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */,
+				8D84CD892328DEAC00D7616C /* GoogleService-Info.plist in Resources */,
 				8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */,
 				8D84CD602328DC2200D7616C /* Main.storyboard in Resources */,
 			);
@@ -250,6 +281,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F99C0A32E6F191E2FDBEC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VietChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D2E83C4E41B68219A967EFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VietChat/Pods-VietChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VietChat/Pods-VietChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VietChat/Pods-VietChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D84CD532328DC2200D7616C /* Sources */ = {
@@ -430,6 +503,7 @@
 		};
 		8D84CD802328DC2500D7616C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32A8C0E383B07A201DB6F76 /* Pods-VietChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +521,7 @@
 		};
 		8D84CD812328DC2500D7616C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B0BA8CD651C7B6F8D72FA0 /* Pods-VietChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
