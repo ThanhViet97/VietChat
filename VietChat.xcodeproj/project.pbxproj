@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5A2328DC2200D7616C /* AppDelegate.swift */; };
+		8D84CD5D2328DC2200D7616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5C2328DC2200D7616C /* ViewController.swift */; };
+		8D84CD602328DC2200D7616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD5E2328DC2200D7616C /* Main.storyboard */; };
+		8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD612328DC2400D7616C /* Assets.xcassets */; };
+		8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */; };
+		8D84CD702328DC2400D7616C /* VietChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD6F2328DC2400D7616C /* VietChatTests.swift */; };
+		8D84CD7B2328DC2500D7616C /* VietChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D84CD6C2328DC2400D7616C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D84CD4F2328DC2200D7616C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D84CD562328DC2200D7616C;
+			remoteInfo = VietChat;
+		};
+		8D84CD772328DC2400D7616C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D84CD4F2328DC2200D7616C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D84CD562328DC2200D7616C;
+			remoteInfo = VietChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D84CD572328DC2200D7616C /* VietChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VietChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D84CD5A2328DC2200D7616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D84CD5C2328DC2200D7616C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D84CD5F2328DC2200D7616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D84CD612328DC2400D7616C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D84CD642328DC2400D7616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D84CD662328DC2400D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D84CD6B2328DC2400D7616C /* VietChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D84CD6F2328DC2400D7616C /* VietChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietChatTests.swift; sourceTree = "<group>"; };
+		8D84CD712328DC2400D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D84CD762328DC2400D7616C /* VietChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietChatUITests.swift; sourceTree = "<group>"; };
+		8D84CD7C2328DC2500D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D84CD542328DC2200D7616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD682328DC2400D7616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD732328DC2400D7616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D84CD4E2328DC2200D7616C = {
+			isa = PBXGroup;
+			children = (
+				8D84CD592328DC2200D7616C /* VietChat */,
+				8D84CD6E2328DC2400D7616C /* VietChatTests */,
+				8D84CD792328DC2400D7616C /* VietChatUITests */,
+				8D84CD582328DC2200D7616C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D84CD582328DC2200D7616C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD572328DC2200D7616C /* VietChat.app */,
+				8D84CD6B2328DC2400D7616C /* VietChatTests.xctest */,
+				8D84CD762328DC2400D7616C /* VietChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D84CD592328DC2200D7616C /* VietChat */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD5A2328DC2200D7616C /* AppDelegate.swift */,
+				8D84CD5C2328DC2200D7616C /* ViewController.swift */,
+				8D84CD5E2328DC2200D7616C /* Main.storyboard */,
+				8D84CD612328DC2400D7616C /* Assets.xcassets */,
+				8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */,
+				8D84CD662328DC2400D7616C /* Info.plist */,
+			);
+			path = VietChat;
+			sourceTree = "<group>";
+		};
+		8D84CD6E2328DC2400D7616C /* VietChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD6F2328DC2400D7616C /* VietChatTests.swift */,
+				8D84CD712328DC2400D7616C /* Info.plist */,
+			);
+			path = VietChatTests;
+			sourceTree = "<group>";
+		};
+		8D84CD792328DC2400D7616C /* VietChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */,
+				8D84CD7C2328DC2500D7616C /* Info.plist */,
+			);
+			path = VietChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D84CD562328DC2200D7616C /* VietChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D84CD7F2328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChat" */;
+			buildPhases = (
+				8D84CD532328DC2200D7616C /* Sources */,
+				8D84CD542328DC2200D7616C /* Frameworks */,
+				8D84CD552328DC2200D7616C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VietChat;
+			productName = VietChat;
+			productReference = 8D84CD572328DC2200D7616C /* VietChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D84CD6A2328DC2400D7616C /* VietChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D84CD822328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChatTests" */;
+			buildPhases = (
+				8D84CD672328DC2400D7616C /* Sources */,
+				8D84CD682328DC2400D7616C /* Frameworks */,
+				8D84CD692328DC2400D7616C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D84CD6D2328DC2400D7616C /* PBXTargetDependency */,
+			);
+			name = VietChatTests;
+			productName = VietChatTests;
+			productReference = 8D84CD6B2328DC2400D7616C /* VietChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D84CD752328DC2400D7616C /* VietChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D84CD852328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChatUITests" */;
+			buildPhases = (
+				8D84CD722328DC2400D7616C /* Sources */,
+				8D84CD732328DC2400D7616C /* Frameworks */,
+				8D84CD742328DC2400D7616C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D84CD782328DC2400D7616C /* PBXTargetDependency */,
+			);
+			name = VietChatUITests;
+			productName = VietChatUITests;
+			productReference = 8D84CD762328DC2400D7616C /* VietChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D84CD4F2328DC2200D7616C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Phan Thanh Việt";
+				TargetAttributes = {
+					8D84CD562328DC2200D7616C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					8D84CD6A2328DC2400D7616C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8D84CD562328DC2200D7616C;
+					};
+					8D84CD752328DC2400D7616C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8D84CD562328DC2200D7616C;
+					};
+				};
+			};
+			buildConfigurationList = 8D84CD522328DC2200D7616C /* Build configuration list for PBXProject "VietChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D84CD4E2328DC2200D7616C;
+			productRefGroup = 8D84CD582328DC2200D7616C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D84CD562328DC2200D7616C /* VietChat */,
+				8D84CD6A2328DC2400D7616C /* VietChatTests */,
+				8D84CD752328DC2400D7616C /* VietChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D84CD552328DC2200D7616C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */,
+				8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */,
+				8D84CD602328DC2200D7616C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD692328DC2400D7616C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD742328DC2400D7616C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D84CD532328DC2200D7616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D84CD5D2328DC2200D7616C /* ViewController.swift in Sources */,
+				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD672328DC2400D7616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D84CD702328DC2400D7616C /* VietChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D84CD722328DC2400D7616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D84CD7B2328DC2500D7616C /* VietChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D84CD6D2328DC2400D7616C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D84CD562328DC2200D7616C /* VietChat */;
+			targetProxy = 8D84CD6C2328DC2400D7616C /* PBXContainerItemProxy */;
+		};
+		8D84CD782328DC2400D7616C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D84CD562328DC2200D7616C /* VietChat */;
+			targetProxy = 8D84CD772328DC2400D7616C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D84CD5E2328DC2200D7616C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D84CD5F2328DC2200D7616C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D84CD642328DC2400D7616C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D84CD7D2328DC2500D7616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D84CD7E2328DC2500D7616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D84CD802328DC2500D7616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D84CD812328DC2500D7616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D84CD832328DC2500D7616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VietChat.app/VietChat";
+			};
+			name = Debug;
+		};
+		8D84CD842328DC2500D7616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VietChat.app/VietChat";
+			};
+			name = Release;
+		};
+		8D84CD862328DC2500D7616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VietChat;
+			};
+			name = Debug;
+		};
+		8D84CD872328DC2500D7616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VietChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viet.VietChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VietChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D84CD522328DC2200D7616C /* Build configuration list for PBXProject "VietChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D84CD7D2328DC2500D7616C /* Debug */,
+				8D84CD7E2328DC2500D7616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D84CD7F2328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D84CD802328DC2500D7616C /* Debug */,
+				8D84CD812328DC2500D7616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D84CD822328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D84CD832328DC2500D7616C /* Debug */,
+				8D84CD842328DC2500D7616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D84CD852328DC2500D7616C /* Build configuration list for PBXNativeTarget "VietChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D84CD862328DC2500D7616C /* Debug */,
+				8D84CD872328DC2500D7616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D84CD4F2328DC2200D7616C /* Project object */;
+}
