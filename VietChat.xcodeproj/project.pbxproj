@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		513012A140C2F1A80FC56452 /* Pods_VietChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31D3ECC8665151C05137BCB /* Pods_VietChat.framework */; };
+		8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBCE2329017500E72640 /* ChatViewController.swift */; };
+		8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBD52329039100E72640 /* ChatTableViewCell.swift */; };
+		8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D04EBD62329039100E72640 /* ChatTableViewCell.xib */; };
 		8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5A2328DC2200D7616C /* AppDelegate.swift */; };
-		8D84CD5D2328DC2200D7616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5C2328DC2200D7616C /* ViewController.swift */; };
+		8D84CD5D2328DC2200D7616C /* SigInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5C2328DC2200D7616C /* SigInViewController.swift */; };
 		8D84CD602328DC2200D7616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD5E2328DC2200D7616C /* Main.storyboard */; };
 		8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD612328DC2400D7616C /* Assets.xcassets */; };
 		8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */; };
@@ -37,13 +40,16 @@
 
 /* Begin PBXFileReference section */
 		59B0BA8CD651C7B6F8D72FA0 /* Pods-VietChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VietChat.release.xcconfig"; path = "Target Support Files/Pods-VietChat/Pods-VietChat.release.xcconfig"; sourceTree = "<group>"; };
+		8D04EBCE2329017500E72640 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8D04EBD52329039100E72640 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		8D04EBD62329039100E72640 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		8D84CD572328DC2200D7616C /* VietChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VietChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD5A2328DC2200D7616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D84CD5C2328DC2200D7616C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D84CD5C2328DC2200D7616C /* SigInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SigInViewController.swift; path = ../../SigInViewController.swift; sourceTree = "<group>"; };
 		8D84CD5F2328DC2200D7616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D84CD612328DC2400D7616C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D84CD642328DC2400D7616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D84CD662328DC2400D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D84CD662328DC2400D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8D84CD6B2328DC2400D7616C /* VietChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD6F2328DC2400D7616C /* VietChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietChatTests.swift; sourceTree = "<group>"; };
 		8D84CD712328DC2400D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D04EBCD2328F8B000E72640 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8D04EBCE2329017500E72640 /* ChatViewController.swift */,
+				8D04EBD02329032300E72640 /* view */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8D04EBD02329032300E72640 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8D04EBD52329039100E72640 /* ChatTableViewCell.swift */,
+				8D04EBD62329039100E72640 /* ChatTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		8D84CD4E2328DC2200D7616C = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +130,14 @@
 		8D84CD592328DC2200D7616C /* VietChat */ = {
 			isa = PBXGroup;
 			children = (
-				8D84CD5A2328DC2200D7616C /* AppDelegate.swift */,
-				8D84CD5C2328DC2200D7616C /* ViewController.swift */,
+				8D84CD8A2328E32900D7616C /* Extentions */,
+				8D84CD8B2328E33900D7616C /* Data */,
+				8D84CD8D2328E34700D7616C /* Resonsity */,
+				8D84CD8C2328E34000D7616C /* Base */,
+				8D84CD8E2328E35500D7616C /* Scenes */,
 				8D84CD5E2328DC2200D7616C /* Main.storyboard */,
-				8D84CD612328DC2400D7616C /* Assets.xcassets */,
-				8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */,
-				8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */,
+				8D84CD8F2328E36100D7616C /* Resourcress */,
+				8D84CD5A2328DC2200D7616C /* AppDelegate.swift */,
 				8D84CD662328DC2400D7616C /* Info.plist */,
 			);
 			path = VietChat;
@@ -135,6 +161,85 @@
 			path = VietChatUITests;
 			sourceTree = "<group>";
 		};
+		8D84CD8A2328E32900D7616C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		8D84CD8B2328E33900D7616C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD912328E41500D7616C /* Source */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8D84CD8C2328E34000D7616C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8D84CD8D2328E34700D7616C /* Resonsity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resonsity;
+			sourceTree = "<group>";
+		};
+		8D84CD8E2328E35500D7616C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D04EBCD2328F8B000E72640 /* Chat */,
+				8D84CD902328E3AA00D7616C /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8D84CD8F2328E36100D7616C /* Resourcress */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */,
+				8D84CD612328DC2400D7616C /* Assets.xcassets */,
+				8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */,
+			);
+			path = Resourcress;
+			sourceTree = "<group>";
+		};
+		8D84CD902328E3AA00D7616C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD5C2328DC2200D7616C /* SigInViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8D84CD912328E41500D7616C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8D84CD932328E42C00D7616C /* Remote */,
+				8D84CD922328E42200D7616C /* Local */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8D84CD922328E42200D7616C /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		8D84CD932328E42C00D7616C /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		DCAF9713FDBE718BA4F37F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +254,6 @@
 				D32A8C0E383B07A201DB6F76 /* Pods-VietChat.debug.xcconfig */,
 				59B0BA8CD651C7B6F8D72FA0 /* Pods-VietChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,6 +365,7 @@
 			files = (
 				8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */,
 				8D84CD892328DEAC00D7616C /* GoogleService-Info.plist in Resources */,
+				8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */,
 				8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */,
 				8D84CD602328DC2200D7616C /* Main.storyboard in Resources */,
 			);
@@ -329,7 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D84CD5D2328DC2200D7616C /* ViewController.swift in Sources */,
+				8D84CD5D2328DC2200D7616C /* SigInViewController.swift in Sources */,
+				8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */,
+				8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */,
 				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
