@@ -6,6 +6,8 @@ target 'VietChat' do
   use_frameworks!
   
   # Pods for VietChat
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

@@ -39,9 +39,11 @@ class SigInViewController: UIViewController {
     }
     
     @IBAction func sigUpAction(_ sender: Any) {
+        
     }
     
     @IBAction func forgotAction(_ sender: Any) {
+        
     }
     
 }

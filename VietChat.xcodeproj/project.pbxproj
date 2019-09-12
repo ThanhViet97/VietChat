@@ -11,6 +11,17 @@
 		8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBCE2329017500E72640 /* ChatViewController.swift */; };
 		8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBD52329039100E72640 /* ChatTableViewCell.swift */; };
 		8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D04EBD62329039100E72640 /* ChatTableViewCell.xib */; };
+		8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */; };
+		8D0D7F71232A08B300CC3A99 /* SigInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F70232A08B300CC3A99 /* SigInContract.swift */; };
+		8D0D7F74232A096100CC3A99 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F73232A096100CC3A99 /* Model.swift */; };
+		8D764E50232AB24900FB0444 /* UserReponsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E4F232AB24900FB0444 /* UserReponsitory.swift */; };
+		8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E51232AB2EF00FB0444 /* UIButton.swift */; };
+		8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E53232AB2FC00FB0444 /* UIViewController.swift */; };
+		8D764E56232AB30900FB0444 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E55232AB30900FB0444 /* UIView.swift */; };
+		8D764E58232AB33800FB0444 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E57232AB33800FB0444 /* UITableView.swift */; };
+		8D764E5A232AB40700FB0444 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E59232AB40700FB0444 /* RoundedButton.swift */; };
+		8D764E5C232AB58000FB0444 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E5B232AB58000FB0444 /* RoundedView.swift */; };
+		8D764E5E232AB61D00FB0444 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E5D232AB61D00FB0444 /* String.swift */; };
 		8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5A2328DC2200D7616C /* AppDelegate.swift */; };
 		8D84CD5D2328DC2200D7616C /* SigInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD5C2328DC2200D7616C /* SigInViewController.swift */; };
 		8D84CD602328DC2200D7616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD5E2328DC2200D7616C /* Main.storyboard */; };
@@ -43,6 +54,17 @@
 		8D04EBCE2329017500E72640 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8D04EBD52329039100E72640 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		8D04EBD62329039100E72640 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInPresenter.swift; sourceTree = "<group>"; };
+		8D0D7F70232A08B300CC3A99 /* SigInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInContract.swift; sourceTree = "<group>"; };
+		8D0D7F73232A096100CC3A99 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8D764E4F232AB24900FB0444 /* UserReponsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReponsitory.swift; sourceTree = "<group>"; };
+		8D764E51232AB2EF00FB0444 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		8D764E53232AB2FC00FB0444 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		8D764E55232AB30900FB0444 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8D764E57232AB33800FB0444 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		8D764E59232AB40700FB0444 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8D764E5B232AB58000FB0444 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		8D764E5D232AB61D00FB0444 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8D84CD572328DC2200D7616C /* VietChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VietChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD5A2328DC2200D7616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D84CD5C2328DC2200D7616C /* SigInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SigInViewController.swift; path = ../../SigInViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +127,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		8D0D7F72232A094300CC3A99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7F73232A096100CC3A99 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8D84CD4E2328DC2200D7616C = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +162,7 @@
 			children = (
 				8D84CD8A2328E32900D7616C /* Extentions */,
 				8D84CD8B2328E33900D7616C /* Data */,
-				8D84CD8D2328E34700D7616C /* Resonsity */,
+				8D84CD8D2328E34700D7616C /* Reponsitorys */,
 				8D84CD8C2328E34000D7616C /* Base */,
 				8D84CD8E2328E35500D7616C /* Scenes */,
 				8D84CD5E2328DC2200D7616C /* Main.storyboard */,
@@ -164,6 +194,13 @@
 		8D84CD8A2328E32900D7616C /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				8D764E51232AB2EF00FB0444 /* UIButton.swift */,
+				8D764E53232AB2FC00FB0444 /* UIViewController.swift */,
+				8D764E55232AB30900FB0444 /* UIView.swift */,
+				8D764E57232AB33800FB0444 /* UITableView.swift */,
+				8D764E59232AB40700FB0444 /* RoundedButton.swift */,
+				8D764E5B232AB58000FB0444 /* RoundedView.swift */,
+				8D764E5D232AB61D00FB0444 /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -171,6 +208,7 @@
 		8D84CD8B2328E33900D7616C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8D0D7F72232A094300CC3A99 /* Model */,
 				8D84CD912328E41500D7616C /* Source */,
 			);
 			path = Data;
@@ -183,18 +221,19 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		8D84CD8D2328E34700D7616C /* Resonsity */ = {
+		8D84CD8D2328E34700D7616C /* Reponsitorys */ = {
 			isa = PBXGroup;
 			children = (
+				8D764E4F232AB24900FB0444 /* UserReponsitory.swift */,
 			);
-			path = Resonsity;
+			path = Reponsitorys;
 			sourceTree = "<group>";
 		};
 		8D84CD8E2328E35500D7616C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				8D04EBCD2328F8B000E72640 /* Chat */,
-				8D84CD902328E3AA00D7616C /* Login */,
+				8D84CD902328E3AA00D7616C /* SigIn */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -209,12 +248,14 @@
 			path = Resourcress;
 			sourceTree = "<group>";
 		};
-		8D84CD902328E3AA00D7616C /* Login */ = {
+		8D84CD902328E3AA00D7616C /* SigIn */ = {
 			isa = PBXGroup;
 			children = (
 				8D84CD5C2328DC2200D7616C /* SigInViewController.swift */,
+				8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */,
+				8D0D7F70232A08B300CC3A99 /* SigInContract.swift */,
 			);
-			path = Login;
+			path = SigIn;
 			sourceTree = "<group>";
 		};
 		8D84CD912328E41500D7616C /* Source */ = {
@@ -434,10 +475,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0D7F74232A096100CC3A99 /* Model.swift in Sources */,
+				8D0D7F71232A08B300CC3A99 /* SigInContract.swift in Sources */,
+				8D764E5C232AB58000FB0444 /* RoundedView.swift in Sources */,
+				8D764E56232AB30900FB0444 /* UIView.swift in Sources */,
 				8D84CD5D2328DC2200D7616C /* SigInViewController.swift in Sources */,
 				8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */,
+				8D764E58232AB33800FB0444 /* UITableView.swift in Sources */,
+				8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */,
 				8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */,
+				8D764E50232AB24900FB0444 /* UserReponsitory.swift in Sources */,
 				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
+				8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */,
+				8D764E5E232AB61D00FB0444 /* String.swift in Sources */,
+				8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */,
+				8D764E5A232AB40700FB0444 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
