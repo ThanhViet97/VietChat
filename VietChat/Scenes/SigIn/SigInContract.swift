@@ -9,7 +9,8 @@
 import UIKit
 
 protocol SigInView {
-    func sigInView()
+    func sigInPass()
+    func sigInFail()
 }
 
 protocol SigInPresenter {

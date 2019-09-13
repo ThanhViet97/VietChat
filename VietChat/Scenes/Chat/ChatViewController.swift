@@ -10,6 +10,9 @@ import UIKit
 
 class ChatViewController: UIViewController {
     
+    // MARK: - Variable
+    static var indentify = "ChatViewController"
+    
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
     

@@ -7,3 +7,28 @@
 //
 
 import UIKit
+import Firebase
+
+class SigInPresenterImpl: SigInPresenter {
+    
+     var view: SigInView!
+    
+    init(view: SigInView) {
+        self.view = view
+    }
+    
+    func sigInPresenter(email: String, password: String) {
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if error == nil {
+                self.view.sigInPass()
+            }
+            else {
+                print(error)
+                self.view.sigInFail()
+            }
+        }
+        
+        
+    }
+}

@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SigInViewController: UIViewController {
-
+class SigInViewController: UIViewController, SigInView {
+    
+    // MARK: - variable
+    var presenster : SigInPresenter!
+    
     // MARK: - IBOutlet
     @IBOutlet weak var sigInButton: UIButton!
     @IBOutlet weak var emailView: UIView!
@@ -22,20 +25,42 @@ class SigInViewController: UIViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenster = SigInPresenterImpl.init(view: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        navigationController?.isNavigationBarHidden = true
+        
+        prepareUI()
     }
     
     // MARK: - private method
     
     // MARK: - method
+    func prepareUI() {
+        sigInButton.activated(false)
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    func sigInPass() {
+        showVcWithMain(identifier: ChatViewController.indentify)
+    }
+    
+    func sigInFail() {
+        showAlert("Error", message: "email or password wrong")
+    }
     
     // MARK: - IBAction
     @IBAction func sigInAction(_ sender: Any) {
-        
+         guard let email = emailTextField.text , let password = passWordTextField.text else {return}
+        presenster.sigInPresenter(email: email, password: password)
     }
     
     @IBAction func textEdittingChange(_ sender: Any) {
-        
+        guard let email = emailTextField.text , let password = passWordTextField.text else {return}
+        sigInButton.activated(email.isValidEmail() && !password.isEmpty)
     }
     
     @IBAction func sigUpAction(_ sender: Any) {

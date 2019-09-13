@@ -30,8 +30,20 @@ extension UIViewController {
     
     // MARK: - Show ViewController
     
-    func showVcWithMain(identifier: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
+    func showVcWithMain(identifier: String) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: identifier)
+        let navController = UINavigationController(rootViewController: vc)
+        self.present(navController, animated:true, completion: nil)
     }
     
+    // MARK: - dismiss Keyboard
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
