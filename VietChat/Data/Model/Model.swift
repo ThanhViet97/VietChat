@@ -8,15 +8,28 @@
 
 import UIKit
 
-struct User: Decodable {
+struct User {
     var email: String
     var id: String
     var name: String
     var password: String
+    
+    init(email: String, id: String, name: String ,password: String) {
+        self.email = email
+        self.id = id
+        self.name = name
+        self.password = password
+    }
 }
 
-struct chat: Decodable {
+struct chat {
     var content: String
     var createAt: String
     var user: [User]
+    
+    init(content: String, createAt: String, user: [User]) {
+        self.content = content
+        self.createAt = createAt
+        self.user = user
+    }
 }

@@ -41,6 +41,7 @@ class SigInViewController: UIViewController, SigInView {
     // MARK: - method
     func prepareUI() {
         sigInButton.activated(false)
+        forgotButton.setUnderlineTitle(buttonText: "You forgot your email or password ?")
         self.hideKeyboardWhenTappedAround()
     }
     

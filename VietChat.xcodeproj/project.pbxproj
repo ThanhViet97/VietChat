@@ -14,6 +14,8 @@
 		8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */; };
 		8D0D7F71232A08B300CC3A99 /* SigInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F70232A08B300CC3A99 /* SigInContract.swift */; };
 		8D0D7F74232A096100CC3A99 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F73232A096100CC3A99 /* Model.swift */; };
+		8D1424D8232B70C30080DAAE /* Chatpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1424D7232B70C30080DAAE /* Chatpresenter.swift */; };
+		8D1424DC232B70FE0080DAAE /* ChatContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1424DB232B70FE0080DAAE /* ChatContract.swift */; };
 		8D764E50232AB24900FB0444 /* UserReponsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E4F232AB24900FB0444 /* UserReponsitory.swift */; };
 		8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E51232AB2EF00FB0444 /* UIButton.swift */; };
 		8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E53232AB2FC00FB0444 /* UIViewController.swift */; };
@@ -57,6 +59,8 @@
 		8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInPresenter.swift; sourceTree = "<group>"; };
 		8D0D7F70232A08B300CC3A99 /* SigInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInContract.swift; sourceTree = "<group>"; };
 		8D0D7F73232A096100CC3A99 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8D1424D7232B70C30080DAAE /* Chatpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatpresenter.swift; sourceTree = "<group>"; };
+		8D1424DB232B70FE0080DAAE /* ChatContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContract.swift; sourceTree = "<group>"; };
 		8D764E4F232AB24900FB0444 /* UserReponsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReponsitory.swift; sourceTree = "<group>"; };
 		8D764E51232AB2EF00FB0444 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8D764E53232AB2FC00FB0444 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				8D04EBCE2329017500E72640 /* ChatViewController.swift */,
+				8D1424D7232B70C30080DAAE /* Chatpresenter.swift */,
+				8D1424DB232B70FE0080DAAE /* ChatContract.swift */,
 				8D04EBD02329032300E72640 /* view */,
 			);
 			path = Chat;
@@ -481,6 +487,7 @@
 				8D764E56232AB30900FB0444 /* UIView.swift in Sources */,
 				8D84CD5D2328DC2200D7616C /* SigInViewController.swift in Sources */,
 				8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */,
+				8D1424D8232B70C30080DAAE /* Chatpresenter.swift in Sources */,
 				8D764E58232AB33800FB0444 /* UITableView.swift in Sources */,
 				8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */,
 				8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */,
@@ -488,6 +495,7 @@
 				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
 				8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */,
 				8D764E5E232AB61D00FB0444 /* String.swift in Sources */,
+				8D1424DC232B70FE0080DAAE /* ChatContract.swift in Sources */,
 				8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */,
 				8D764E5A232AB40700FB0444 /* RoundedButton.swift in Sources */,
 			);
