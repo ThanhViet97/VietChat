@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-js-AiR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="735"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="700"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="C6s-hg-xqI">
                                     <rect key="frame" x="0.0" y="124" width="414" height="44"/>
@@ -223,8 +223,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-vi-yzt">
+                                <rect key="frame" x="0.0" y="744" width="414" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IS2-U8-YGP"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HY7-bG-1dr">
-                                <rect key="frame" x="0.0" y="779" width="414" height="117"/>
+                                <rect key="frame" x="0.0" y="745" width="414" height="117"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-Pv-5bK">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
@@ -253,16 +260,8 @@
                                                     <action selector="cameraAction:" destination="mdS-FX-sVb" eventType="touchUpInside" id="f3c-hK-30M"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azo-eD-Sz0">
-                                                <rect key="frame" x="108.5" y="2" width="52" height="37"/>
-                                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                                <state key="normal" image="Dictation"/>
-                                                <connections>
-                                                    <action selector="dictationAction:" destination="mdS-FX-sVb" eventType="touchUpInside" id="Aqb-eo-fcg"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85S-wu-Bos">
-                                                <rect key="frame" x="8" y="2" width="52" height="37"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85S-wu-Bos">
+                                                <rect key="frame" x="5" y="2" width="52" height="37"/>
                                                 <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                 <state key="normal" image="Emoji"/>
                                                 <connections>
@@ -274,11 +273,8 @@
                                         <constraints>
                                             <constraint firstItem="85S-wu-Bos" firstAttribute="width" secondItem="E4E-af-aXG" secondAttribute="width" id="2wB-6y-62U"/>
                                             <constraint firstAttribute="bottom" secondItem="Wxj-jt-S3N" secondAttribute="bottom" constant="2" id="32q-SI-tZh"/>
-                                            <constraint firstItem="Azo-eD-Sz0" firstAttribute="leading" secondItem="Wxj-jt-S3N" secondAttribute="trailing" id="65w-Sm-oCE"/>
-                                            <constraint firstItem="Azo-eD-Sz0" firstAttribute="width" secondItem="Wxj-jt-S3N" secondAttribute="width" id="C9a-dM-mHb"/>
                                             <constraint firstItem="85S-wu-Bos" firstAttribute="leading" secondItem="BFT-Pv-5bK" secondAttribute="leading" constant="5" id="F8X-fz-3jR"/>
                                             <constraint firstItem="V3g-aK-Ko2" firstAttribute="leading" secondItem="E4E-af-aXG" secondAttribute="trailing" id="GwR-eQ-GvB"/>
-                                            <constraint firstAttribute="bottom" secondItem="Azo-eD-Sz0" secondAttribute="bottom" constant="2" id="NMl-BO-vCc"/>
                                             <constraint firstItem="85S-wu-Bos" firstAttribute="top" secondItem="BFT-Pv-5bK" secondAttribute="top" constant="2" id="PyS-jD-QWW"/>
                                             <constraint firstAttribute="bottom" secondItem="V3g-aK-Ko2" secondAttribute="bottom" id="Yo6-fN-Zbh"/>
                                             <constraint firstItem="Wxj-jt-S3N" firstAttribute="leading" secondItem="85S-wu-Bos" secondAttribute="trailing" id="aAB-dA-v3C"/>
@@ -288,17 +284,17 @@
                                             <constraint firstAttribute="bottom" secondItem="85S-wu-Bos" secondAttribute="bottom" constant="2" id="kBH-Cv-jhw"/>
                                             <constraint firstItem="E4E-af-aXG" firstAttribute="width" secondItem="V3g-aK-Ko2" secondAttribute="width" id="lHY-ca-7LZ"/>
                                             <constraint firstItem="Wxj-jt-S3N" firstAttribute="width" secondItem="85S-wu-Bos" secondAttribute="width" id="nyy-ll-w1X"/>
-                                            <constraint firstItem="Azo-eD-Sz0" firstAttribute="top" secondItem="BFT-Pv-5bK" secondAttribute="top" constant="2" id="o8b-y7-ccM"/>
                                             <constraint firstItem="E4E-af-aXG" firstAttribute="top" secondItem="BFT-Pv-5bK" secondAttribute="top" id="s9b-vL-0qj"/>
+                                            <constraint firstItem="E4E-af-aXG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wxj-jt-S3N" secondAttribute="trailing" constant="8" symbolic="YES" id="sbN-Yt-EW3"/>
                                             <constraint firstAttribute="bottom" secondItem="E4E-af-aXG" secondAttribute="bottom" id="uF7-a9-cf9"/>
                                             <constraint firstItem="V3g-aK-Ko2" firstAttribute="top" secondItem="BFT-Pv-5bK" secondAttribute="top" id="xNV-9y-5L6"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type message..." adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I74-y7-btC">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type message..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I74-y7-btC">
                                         <rect key="frame" x="15" y="46" width="384" height="66"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,22 +311,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93498331308364868" green="0.94253545999526978" blue="0.94194298982620239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="HY7-bG-1dr" secondAttribute="bottom" id="4H6-Bs-GGN"/>
-                            <constraint firstItem="HY7-bG-1dr" firstAttribute="top" secondItem="6Ln-js-AiR" secondAttribute="bottom" id="9sP-Au-keY"/>
                             <constraint firstItem="HY7-bG-1dr" firstAttribute="trailing" secondItem="Ght-s8-QX2" secondAttribute="trailing" id="A5x-P1-U7f"/>
                             <constraint firstItem="6Ln-js-AiR" firstAttribute="trailing" secondItem="Ght-s8-QX2" secondAttribute="trailing" id="B41-0S-RZ1"/>
+                            <constraint firstItem="HY7-bG-1dr" firstAttribute="top" secondItem="lSv-vi-yzt" secondAttribute="bottom" id="STR-CX-2ZE"/>
                             <constraint firstItem="HY7-bG-1dr" firstAttribute="height" secondItem="Ght-s8-QX2" secondAttribute="height" multiplier="1/7" id="VuA-a2-P3t"/>
                             <constraint firstItem="6Ln-js-AiR" firstAttribute="leading" secondItem="Ght-s8-QX2" secondAttribute="leading" id="W14-4i-bcB"/>
+                            <constraint firstItem="Ght-s8-QX2" firstAttribute="bottom" secondItem="HY7-bG-1dr" secondAttribute="bottom" id="Zaz-vs-pJs"/>
+                            <constraint firstItem="lSv-vi-yzt" firstAttribute="top" secondItem="6Ln-js-AiR" secondAttribute="bottom" id="ZuZ-9Y-jsN"/>
                             <constraint firstItem="HY7-bG-1dr" firstAttribute="leading" secondItem="Ght-s8-QX2" secondAttribute="leading" id="add-2X-aUb"/>
+                            <constraint firstItem="lSv-vi-yzt" firstAttribute="leading" secondItem="Cf8-CU-dv4" secondAttribute="leading" id="eXL-f8-bGW"/>
                             <constraint firstItem="BFT-Pv-5bK" firstAttribute="height" secondItem="Ght-s8-QX2" secondAttribute="height" multiplier="1/20" id="fb2-RQ-UdV"/>
                             <constraint firstItem="6Ln-js-AiR" firstAttribute="top" secondItem="Ght-s8-QX2" secondAttribute="top" id="sop-v1-ZDM"/>
+                            <constraint firstAttribute="trailing" secondItem="lSv-vi-yzt" secondAttribute="trailing" id="vIR-l2-kUV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ght-s8-QX2"/>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="Wxj-jt-S3N" id="O62-TK-yhz"/>
                         <outlet property="composeView" destination="BFT-Pv-5bK" id="k6R-Fw-60j"/>
-                        <outlet property="dictationButton" destination="Azo-eD-Sz0" id="IDE-Vn-xAC"/>
                         <outlet property="emojiButton" destination="85S-wu-Bos" id="CTM-xQ-1XV"/>
                         <outlet property="inputTextField" destination="I74-y7-btC" id="I2m-va-qnK"/>
                         <outlet property="inputVIew" destination="HY7-bG-1dr" id="LPn-RD-TpL"/>
@@ -346,7 +344,6 @@
     </scenes>
     <resources>
         <image name="Camera icon" width="34" height="25"/>
-        <image name="Dictation" width="20" height="30"/>
         <image name="Emoji" width="25" height="25"/>
         <image name="Send icon" width="39" height="29"/>
         <image name="plus Icon" width="22" height="22"/>

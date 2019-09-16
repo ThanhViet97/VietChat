@@ -15,7 +15,11 @@ extension UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
     }
-    
+
+    func titleColerNavigationBar() {
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.init(cgColor: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
     // MARK: - Show Alert
     
     func showAlert(_ title: String?,
@@ -42,6 +46,7 @@ extension UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
+        print(view.addGestureRecognizer(tap))
     }
     @objc func dismissKeyboard() {
         view.endEditing(true)
