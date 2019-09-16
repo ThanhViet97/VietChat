@@ -19,9 +19,10 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var emojiButton: UIButton!
-    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var composeView: UIView!
     @IBOutlet weak var inputVIew: UIView!
+    @IBOutlet weak var shadowInputView: UIView!
     
     // MARK: - View life cycle
     override func viewDidLoad() {
@@ -41,14 +42,32 @@ class ChatViewController: UIViewController {
     
     // MARK: - Method
     func prepareUI() {
-        inputVIew.dropShadow(color: .black, opacity: 2, offSet: CGSize(width: -1, height: 1), radius: 2, scale: true)
+        shadowInputView.dropShadow(color: .black, opacity: 2, offSet: CGSize(width: -1, height: 1), radius: 2, scale: true)
         self.hideKeyboardWhenTappedAround()
+        
+        inputTextView.text = "massage"
+        inputTextView.textColor = UIColor.lightGray
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        if inputTextView.textColor == UIColor.lightGray {
+            inputTextView.text = nil
+            inputTextView.textColor = UIColor.black
+        }
+    }
+    func textViewDidEndEditing(textView: UITextView) {
+        if inputTextView.text.isEmpty {
+            inputTextView.text = "massage"
+            inputTextView.textColor = UIColor.lightGray
+        }
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
             if self.view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height
+                textViewDidBeginEditing(textView: inputTextView)
+                textViewDidEndEditing(textView: inputTextView)
             }
         }
     }
@@ -56,12 +75,16 @@ class ChatViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
+            textViewDidBeginEditing(textView: inputTextView)
+            textViewDidEndEditing(textView: inputTextView)
         }
     }
     
     // MARK: - IBAction
+    
+    
     @IBAction func sendAction(_ sender: Any) {
-        
+          self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func plusAction(_ sender: Any) {
@@ -75,5 +98,18 @@ class ChatViewController: UIViewController {
     @IBAction func emojiAction(_ sender: Any) {
         
     }
+}
+
+extension ChatViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath ) as! ChatTableViewCell
+        
+        return cell
+    }
+    
     
 }

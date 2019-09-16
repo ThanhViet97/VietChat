@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SigInPresenterImpl: SigInPresenter {
+class SigInPresenterImpl: SigInPresenter  {
     
     var view: SigInView!
     
@@ -28,3 +28,4 @@ class SigInPresenterImpl: SigInPresenter {
         }    
     }
 }
+

@@ -22,7 +22,7 @@ struct User {
     }
 }
 
-struct chat {
+struct Chat {
     var content: String
     var createAt: String
     var user: [User]

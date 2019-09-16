@@ -10,7 +10,11 @@ import UIKit
 
 class ChatTableViewCell: UITableViewCell {
 
+    static let identifier = "ChatViewController"
+    
     @IBOutlet weak var message: UILabel!
+    @IBOutlet weak var user_id: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,8 +22,6 @@ class ChatTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-    
 }

@@ -7,5 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
+import FirebaseDatabase
 
+//protocol UserRepository {
+//    func fetchUser() -> [User]
+////    func fetchChat() -> [Chat]
+//}
 
+//class UserRepositoryImpl: UserRepository {
+//
+//}

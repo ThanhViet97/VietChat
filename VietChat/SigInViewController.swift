@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SigInViewController: UIViewController, SigInView {
+class SigInViewController: UIViewController, SigInView  {
+    
+    
     
     // MARK: - variable
     var presenster : SigInPresenter!
@@ -30,13 +32,9 @@ class SigInViewController: UIViewController, SigInView {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         navigationController?.isNavigationBarHidden = true
-        
         prepareUI()
     }
-    
-    // MARK: - private method
     
     // MARK: - method
     func prepareUI() {
@@ -53,6 +51,7 @@ class SigInViewController: UIViewController, SigInView {
         showAlert("Error", message: "email or password wrong")
     }
     
+
     // MARK: - IBAction
     @IBAction func sigInAction(_ sender: Any) {
          guard let email = emailTextField.text , let password = passWordTextField.text else {return}
@@ -65,7 +64,8 @@ class SigInViewController: UIViewController, SigInView {
     }
     
     @IBAction func sigUpAction(_ sender: Any) {
-        
+        guard let email = emailTextField.text , let password = passWordTextField.text else {return}
+//        presenster.sigUpPresenter(email: email, password: password)
     }
     
     @IBAction func forgotAction(_ sender: Any) {

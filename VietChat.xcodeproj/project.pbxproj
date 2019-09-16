@@ -11,6 +11,10 @@
 		8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBCE2329017500E72640 /* ChatViewController.swift */; };
 		8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBD52329039100E72640 /* ChatTableViewCell.swift */; };
 		8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D04EBD62329039100E72640 /* ChatTableViewCell.xib */; };
+		8D0A44A5232FDADF00761B6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D0A44A4232FDADF00761B6A /* GoogleService-Info.plist */; };
+		8D0A7833232F8E3700A769EA /* SigUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7832232F8E3700A769EA /* SigUpViewController.swift */; };
+		8D0A7835232F8E4900A769EA /* SigUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7834232F8E4900A769EA /* SigUpPresenter.swift */; };
+		8D0A7837232F8E5A00A769EA /* SigUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7836232F8E5A00A769EA /* SigUpContract.swift */; };
 		8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */; };
 		8D0D7F71232A08B300CC3A99 /* SigInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F70232A08B300CC3A99 /* SigInContract.swift */; };
 		8D0D7F74232A096100CC3A99 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F73232A096100CC3A99 /* Model.swift */; };
@@ -31,7 +35,6 @@
 		8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */; };
 		8D84CD702328DC2400D7616C /* VietChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD6F2328DC2400D7616C /* VietChatTests.swift */; };
 		8D84CD7B2328DC2500D7616C /* VietChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */; };
-		8D84CD892328DEAC00D7616C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		8D04EBCE2329017500E72640 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8D04EBD52329039100E72640 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		8D04EBD62329039100E72640 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		8D0A44A4232FDADF00761B6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D0A7832232F8E3700A769EA /* SigUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpViewController.swift; sourceTree = "<group>"; };
+		8D0A7834232F8E4900A769EA /* SigUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpPresenter.swift; sourceTree = "<group>"; };
+		8D0A7836232F8E5A00A769EA /* SigUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpContract.swift; sourceTree = "<group>"; };
 		8D0D7F6D232A080E00CC3A99 /* SigInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInPresenter.swift; sourceTree = "<group>"; };
 		8D0D7F70232A08B300CC3A99 /* SigInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInContract.swift; sourceTree = "<group>"; };
 		8D0D7F73232A096100CC3A99 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -82,7 +89,6 @@
 		8D84CD762328DC2400D7616C /* VietChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D84CD7A2328DC2500D7616C /* VietChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietChatUITests.swift; sourceTree = "<group>"; };
 		8D84CD7C2328DC2500D7616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D32A8C0E383B07A201DB6F76 /* Pods-VietChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VietChat.debug.xcconfig"; path = "Target Support Files/Pods-VietChat/Pods-VietChat.debug.xcconfig"; sourceTree = "<group>"; };
 		E31D3ECC8665151C05137BCB /* Pods_VietChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VietChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +137,16 @@
 				8D04EBD62329039100E72640 /* ChatTableViewCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		8D0A7831232F8DE700A769EA /* SigUp */ = {
+			isa = PBXGroup;
+			children = (
+				8D0A7832232F8E3700A769EA /* SigUpViewController.swift */,
+				8D0A7834232F8E4900A769EA /* SigUpPresenter.swift */,
+				8D0A7836232F8E5A00A769EA /* SigUpContract.swift */,
+			);
+			path = SigUp;
 			sourceTree = "<group>";
 		};
 		8D0D7F72232A094300CC3A99 /* Model */ = {
@@ -239,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				8D04EBCD2328F8B000E72640 /* Chat */,
+				8D0A7831232F8DE700A769EA /* SigUp */,
 				8D84CD902328E3AA00D7616C /* SigIn */,
 			);
 			path = Scenes;
@@ -249,7 +266,7 @@
 			children = (
 				8D84CD632328DC2400D7616C /* LaunchScreen.storyboard */,
 				8D84CD612328DC2400D7616C /* Assets.xcassets */,
-				8D84CD882328DEAC00D7616C /* GoogleService-Info.plist */,
+				8D0A44A4232FDADF00761B6A /* GoogleService-Info.plist */,
 			);
 			path = Resourcress;
 			sourceTree = "<group>";
@@ -411,8 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D84CD652328DC2400D7616C /* LaunchScreen.storyboard in Resources */,
-				8D84CD892328DEAC00D7616C /* GoogleService-Info.plist in Resources */,
 				8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */,
+				8D0A44A5232FDADF00761B6A /* GoogleService-Info.plist in Resources */,
 				8D84CD622328DC2400D7616C /* Assets.xcassets in Resources */,
 				8D84CD602328DC2200D7616C /* Main.storyboard in Resources */,
 			);
@@ -489,12 +506,15 @@
 				8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */,
 				8D1424D8232B70C30080DAAE /* Chatpresenter.swift in Sources */,
 				8D764E58232AB33800FB0444 /* UITableView.swift in Sources */,
+				8D0A7835232F8E4900A769EA /* SigUpPresenter.swift in Sources */,
 				8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */,
+				8D0A7833232F8E3700A769EA /* SigUpViewController.swift in Sources */,
 				8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */,
 				8D764E50232AB24900FB0444 /* UserReponsitory.swift in Sources */,
 				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
 				8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */,
 				8D764E5E232AB61D00FB0444 /* String.swift in Sources */,
+				8D0A7837232F8E5A00A769EA /* SigUpContract.swift in Sources */,
 				8D1424DC232B70FE0080DAAE /* ChatContract.swift in Sources */,
 				8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */,
 				8D764E5A232AB40700FB0444 /* RoundedButton.swift in Sources */,
