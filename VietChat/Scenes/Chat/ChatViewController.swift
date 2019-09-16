@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - Variable
     static var indentify = "ChatViewController"
@@ -44,21 +44,30 @@ class ChatViewController: UIViewController {
     func prepareUI() {
         shadowInputView.dropShadow(color: .black, opacity: 2, offSet: CGSize(width: -1, height: 1), radius: 2, scale: true)
         self.hideKeyboardWhenTappedAround()
-        
+        // MARK: - set placeholder
         inputTextView.text = "massage"
         inputTextView.textColor = UIColor.lightGray
+        sentButton.activated(false)
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
+    // MARK: - Edit placeholder textView
+    func textViewDidBeginEditing(_ textView: UITextView) {
         if inputTextView.textColor == UIColor.lightGray {
             inputTextView.text = nil
             inputTextView.textColor = UIColor.black
+            sentButton.activated(false)
         }
     }
-    func textViewDidEndEditing(textView: UITextView) {
+    
+    func textViewDidChange(_ textView: UITextView) {
+        inputTextView.text.isEmpty ? sentButton.activated(false) : sentButton.activated(true)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
         if inputTextView.text.isEmpty {
             inputTextView.text = "massage"
             inputTextView.textColor = UIColor.lightGray
+            sentButton.activated(false)
         }
     }
     
@@ -66,8 +75,6 @@ class ChatViewController: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
             if self.view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height
-                textViewDidBeginEditing(textView: inputTextView)
-                textViewDidEndEditing(textView: inputTextView)
             }
         }
     }
@@ -75,16 +82,13 @@ class ChatViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
-            textViewDidBeginEditing(textView: inputTextView)
-            textViewDidEndEditing(textView: inputTextView)
         }
     }
     
     // MARK: - IBAction
-    
-    
     @IBAction func sendAction(_ sender: Any) {
           self.hideKeyboardWhenTappedAround()
+        
     }
     
     @IBAction func plusAction(_ sender: Any) {
