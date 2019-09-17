@@ -10,7 +10,7 @@ import UIKit
 
 class ChatTableViewCell: UITableViewCell {
 
-    static let identifier = "ChatViewController"
+    static let identifier = "ChatTableViewCell"
     
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var user_id: UILabel!

@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol SigUpView {
+protocol SigUpView: class{
     func sigUp(email: String)
     func sigUpFail(error: String)
 }
 
-protocol SigUpPresenter {
-    func sigUpPresenter(email: String, password: String)
+protocol SigUpPresenter: class {
+    func sigUpPresenter(email: String, password: String , name: String)
 }

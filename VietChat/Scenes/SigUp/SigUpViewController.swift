@@ -15,10 +15,11 @@ class SigUpViewController: UIViewController , SigUpView {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var sigUpButton: RoundedButton!
+    @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = SigUpPresenterImpl.init(view: self)
+        presenter = SigUpPresenterImpl.init(view: self, userRepository: UserRepositoryImpl.shared)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,12 +49,12 @@ class SigUpViewController: UIViewController , SigUpView {
     }
     
     @IBAction func textFieldEdittingChange(_ sender: Any) {
-        guard let email = emailTextField.text , let password = passwordTextField.text else {return}
-        sigUpButton.activated(email.isValidEmail() && !password.isEmpty)
+        guard let email = emailTextField.text , let password = passwordTextField.text , let name = nameTextField.text else {return}
+        sigUpButton.activated(email.isValidEmail() && !password.isEmpty && !name.isEmpty)
     }
     
     @IBAction func sigUpButtonAction(_ sender: Any) {
-        guard let email = emailTextField.text , let password = passwordTextField.text else {return}
-        presenter.sigUpPresenter(email: email, password: password)
+        guard let email = emailTextField.text , let password = passwordTextField.text, let name = nameTextField.text else {return}
+        presenter.sigUpPresenter(email: email, password: password, name: name)
     }
 }

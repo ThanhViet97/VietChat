@@ -11,6 +11,7 @@
 		8D04EBCF2329017500E72640 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBCE2329017500E72640 /* ChatViewController.swift */; };
 		8D04EBD72329039100E72640 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04EBD52329039100E72640 /* ChatTableViewCell.swift */; };
 		8D04EBD82329039100E72640 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D04EBD62329039100E72640 /* ChatTableViewCell.xib */; };
+		8D08E45623314C0700448F15 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08E45523314C0700448F15 /* Local.swift */; };
 		8D0A44A5232FDADF00761B6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D0A44A4232FDADF00761B6A /* GoogleService-Info.plist */; };
 		8D0A7833232F8E3700A769EA /* SigUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7832232F8E3700A769EA /* SigUpViewController.swift */; };
 		8D0A7835232F8E4900A769EA /* SigUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A7834232F8E4900A769EA /* SigUpPresenter.swift */; };
@@ -20,6 +21,7 @@
 		8D0D7F74232A096100CC3A99 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7F73232A096100CC3A99 /* Model.swift */; };
 		8D1424D8232B70C30080DAAE /* Chatpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1424D7232B70C30080DAAE /* Chatpresenter.swift */; };
 		8D1424DC232B70FE0080DAAE /* ChatContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1424DB232B70FE0080DAAE /* ChatContract.swift */; };
+		8D151BAA2330C7F400EF60DD /* ChatReponsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D151BA92330C7F400EF60DD /* ChatReponsitory.swift */; };
 		8D764E50232AB24900FB0444 /* UserReponsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E4F232AB24900FB0444 /* UserReponsitory.swift */; };
 		8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E51232AB2EF00FB0444 /* UIButton.swift */; };
 		8D764E54232AB2FC00FB0444 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D764E53232AB2FC00FB0444 /* UIViewController.swift */; };
@@ -59,6 +61,7 @@
 		8D04EBCE2329017500E72640 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8D04EBD52329039100E72640 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		8D04EBD62329039100E72640 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		8D08E45523314C0700448F15 /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		8D0A44A4232FDADF00761B6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D0A7832232F8E3700A769EA /* SigUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpViewController.swift; sourceTree = "<group>"; };
 		8D0A7834232F8E4900A769EA /* SigUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpPresenter.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		8D0D7F73232A096100CC3A99 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8D1424D7232B70C30080DAAE /* Chatpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatpresenter.swift; sourceTree = "<group>"; };
 		8D1424DB232B70FE0080DAAE /* ChatContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContract.swift; sourceTree = "<group>"; };
+		8D151BA92330C7F400EF60DD /* ChatReponsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReponsitory.swift; sourceTree = "<group>"; };
 		8D764E4F232AB24900FB0444 /* UserReponsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReponsitory.swift; sourceTree = "<group>"; };
 		8D764E51232AB2EF00FB0444 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8D764E53232AB2FC00FB0444 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				8D764E4F232AB24900FB0444 /* UserReponsitory.swift */,
+				8D151BA92330C7F400EF60DD /* ChatReponsitory.swift */,
 			);
 			path = Reponsitorys;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 		8D84CD922328E42200D7616C /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				8D08E45523314C0700448F15 /* Local.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -499,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0D7F74232A096100CC3A99 /* Model.swift in Sources */,
+				8D151BAA2330C7F400EF60DD /* ChatReponsitory.swift in Sources */,
 				8D0D7F71232A08B300CC3A99 /* SigInContract.swift in Sources */,
 				8D764E5C232AB58000FB0444 /* RoundedView.swift in Sources */,
 				8D764E56232AB30900FB0444 /* UIView.swift in Sources */,
@@ -514,6 +521,7 @@
 				8D84CD5B2328DC2200D7616C /* AppDelegate.swift in Sources */,
 				8D0D7F6E232A080E00CC3A99 /* SigInPresenter.swift in Sources */,
 				8D764E5E232AB61D00FB0444 /* String.swift in Sources */,
+				8D08E45623314C0700448F15 /* Local.swift in Sources */,
 				8D0A7837232F8E5A00A769EA /* SigUpContract.swift in Sources */,
 				8D1424DC232B70FE0080DAAE /* ChatContract.swift in Sources */,
 				8D764E52232AB2EF00FB0444 /* UIButton.swift in Sources */,

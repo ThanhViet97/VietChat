@@ -7,29 +7,53 @@
 //
 
 import UIKit
+import Firebase
 
 struct User {
     var email: String
-    var id: String
     var name: String
-    var password: String
     
-    init(email: String, id: String, name: String ,password: String) {
+    init(email: String, name: String) {
         self.email = email
-        self.id = id
         self.name = name
-        self.password = password
+    }
+    
+    init?(snapshot: DataSnapshot) {
+        guard let value = snapshot.value as? [String: AnyObject],
+            let email = value["email"] as? String,
+            let name  = value["name"] as? String else
+        {return nil}
+        self.email = email
+        self.name = name
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "email": email,
+            "name": name
+        ]
     }
 }
 
 struct Chat {
+    var userIDSend: String
     var content: String
     var createAt: String
-    var user: [User]
+    var userSend: User
     
-    init(content: String, createAt: String, user: [User]) {
+    init(userIDSend: String , content: String, createAt: String, userSend: User) {
+        self.userIDSend = userIDSend
         self.content = content
         self.createAt = createAt
-        self.user = user
+        self.userSend = userSend
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "content" : content,
+            "createAt" : createAt,
+            "userIDSend": userIDSend,
+            "userSend" : userSend.toAnyObject()
+        ]
     }
 }

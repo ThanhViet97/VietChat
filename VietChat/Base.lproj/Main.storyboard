@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mdS-FX-sVb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Izv-7W-Jic">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -224,6 +224,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mdS-FX-sVb" id="gsD-yf-yIH"/>
+                                    <outlet property="delegate" destination="mdS-FX-sVb" id="0i3-yv-iMm"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-vi-yzt">
                                 <rect key="frame" x="0.0" y="744" width="414" height="1"/>
@@ -296,7 +300,7 @@
                                         <rect key="frame" x="15" y="41" width="384" height="76"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         <connections>
                                             <outlet property="delegate" destination="mdS-FX-sVb" id="2wB-0n-Lvv"/>
                                         </connections>
@@ -441,6 +445,38 @@
                                     <action selector="sigUpButtonAction:" destination="M36-RV-Bch" eventType="touchUpInside" id="QI0-n7-VB1"/>
                                 </connections>
                             </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvG-9N-gdp" customClass="RoundedView" customModule="VietChat" customModuleProvider="target">
+                                <rect key="frame" x="52" y="283" width="310.5" height="53"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Whk-c6-6K8">
+                                        <rect key="frame" x="10" y="0.0" width="290.5" height="53"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <action selector="textFieldEdittingChange:" destination="M36-RV-Bch" eventType="editingChanged" id="0JM-bA-Sz0"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Whk-c6-6K8" secondAttribute="bottom" id="Fh2-U3-AJM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Whk-c6-6K8" secondAttribute="trailing" constant="10" id="GFN-pf-oGr"/>
+                                    <constraint firstItem="Whk-c6-6K8" firstAttribute="top" secondItem="tvG-9N-gdp" secondAttribute="top" id="SjB-d2-eU7"/>
+                                    <constraint firstItem="Whk-c6-6K8" firstAttribute="leading" secondItem="tvG-9N-gdp" secondAttribute="leading" constant="10" id="r6k-Gl-nas"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBorderColor">
+                                        <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -448,9 +484,13 @@
                             <constraint firstItem="SDU-ob-APx" firstAttribute="centerX" secondItem="xJw-DS-uvK" secondAttribute="centerX" id="1BS-ff-vjP"/>
                             <constraint firstItem="QY2-cf-tsE" firstAttribute="height" secondItem="yrn-Cu-PPw" secondAttribute="height" multiplier="1/17" id="6aK-LM-h2e"/>
                             <constraint firstItem="NgL-4g-e3D" firstAttribute="width" secondItem="QY2-cf-tsE" secondAttribute="width" id="7wf-cX-PSC"/>
+                            <constraint firstItem="tvG-9N-gdp" firstAttribute="width" secondItem="NgL-4g-e3D" secondAttribute="width" id="LVf-8I-NdN"/>
                             <constraint firstItem="NgL-4g-e3D" firstAttribute="centerX" secondItem="QY2-cf-tsE" secondAttribute="centerX" id="NcB-dv-o3e"/>
                             <constraint firstItem="QY2-cf-tsE" firstAttribute="centerY" secondItem="xJw-DS-uvK" secondAttribute="centerY" id="QHS-bf-mbz"/>
+                            <constraint firstItem="NgL-4g-e3D" firstAttribute="top" secondItem="tvG-9N-gdp" secondAttribute="bottom" constant="30" id="UT2-Ts-HlZ"/>
+                            <constraint firstItem="tvG-9N-gdp" firstAttribute="centerX" secondItem="NgL-4g-e3D" secondAttribute="centerX" id="Un9-Fj-317"/>
                             <constraint firstItem="QY2-cf-tsE" firstAttribute="top" secondItem="NgL-4g-e3D" secondAttribute="bottom" constant="30" id="ZKe-1F-X5Z"/>
+                            <constraint firstItem="tvG-9N-gdp" firstAttribute="height" secondItem="NgL-4g-e3D" secondAttribute="height" id="mCK-qg-ZhN"/>
                             <constraint firstItem="NgL-4g-e3D" firstAttribute="height" secondItem="QY2-cf-tsE" secondAttribute="height" id="mEs-eA-1OB"/>
                             <constraint firstItem="QY2-cf-tsE" firstAttribute="centerX" secondItem="xJw-DS-uvK" secondAttribute="centerX" id="mRo-Ay-Tgn"/>
                             <constraint firstItem="SDU-ob-APx" firstAttribute="top" secondItem="QY2-cf-tsE" secondAttribute="bottom" constant="50" id="nGy-1d-DU7"/>
@@ -461,6 +501,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="KAm-Hm-fW0" id="KX7-S7-BJW"/>
+                        <outlet property="nameTextField" destination="Whk-c6-6K8" id="91h-82-THH"/>
                         <outlet property="passwordTextField" destination="HTD-yF-1Tm" id="oRE-U5-O7z"/>
                         <outlet property="sigUpButton" destination="SDU-ob-APx" id="AwB-LD-l3K"/>
                     </connections>

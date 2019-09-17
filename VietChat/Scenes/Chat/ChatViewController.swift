@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ChatViewController: UIViewController, UITextViewDelegate {
+class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
+   
+    
     
     // MARK: - Variable
     static var indentify = "ChatViewController"
+    var presenter: ChatPresenter!
     
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -27,7 +30,8 @@ class ChatViewController: UIViewController, UITextViewDelegate {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.getTableViewCell(identifier: ChatTableViewCell.identifier)
+        presenter = ChatPresenterImpl(view: self , chatRepository: ChatReponsitoryImpl.shared)
     }
   
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +41,6 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         prepareUI()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-       
     }
     
     // MARK: - Method
@@ -85,10 +88,15 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         }
     }
     
+    func sendView() {
+        print("send succes")
+    }
+    
     // MARK: - IBAction
     @IBAction func sendAction(_ sender: Any) {
           self.hideKeyboardWhenTappedAround()
-        
+        guard let contentMessage = inputTextView.text else {return}
+        presenter.sendPresenter(content: contentMessage)
     }
     
     @IBAction func plusAction(_ sender: Any) {
@@ -110,10 +118,8 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath ) as! ChatTableViewCell
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath ) as! ChatTableViewCell
         return cell
     }
-    
-    
 }

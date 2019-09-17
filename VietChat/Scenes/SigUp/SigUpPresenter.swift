@@ -8,16 +8,20 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class SigUpPresenterImpl: SigUpPresenter {
     
-    var view: SigUpView!
+    weak var view: SigUpView!
+    var userRepository: UserRepository!
     
-    init(view: SigUpView) {
+    init(view: SigUpView , userRepository: UserRepository) {
         self.view = view
+        self.userRepository = userRepository
     }
     
-    func sigUpPresenter(email: String, password: String) {
+    func sigUpPresenter(email: String, password: String, name: String) {
+        
         Auth.auth().createUser(withEmail: email, password: password) { (users, error) in
             if let error = error {
                 self.view.sigUpFail(error: error.localizedDescription)
@@ -27,12 +31,13 @@ class SigUpPresenterImpl: SigUpPresenter {
                     currentUser.sendEmailVerification(completion: { (error) in
                         try! Auth.auth().signOut()
                         if error == nil {
+                            
+                            self.userRepository.createNewUser(uid: (users?.user.uid ?? "")! , email : email, name: name )
                             self.view.sigUp(email: String(currentUser.email!))
                         }
                     })
                 }
             }
-           
         } 
     }
 }

@@ -8,4 +8,12 @@
 
 import UIKit
 
+protocol ChatView: class{
+    func sendView()
+}
+
+protocol ChatPresenter: class {
+    func sendPresenter(content: String)
+}
+
 

@@ -27,7 +27,7 @@ class SigInViewController: UIViewController, SigInView  {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenster = SigInPresenterImpl.init(view: self)
+        presenster = SigInPresenterImpl.init(view: self, userRepository: UserRepositoryImpl.shared)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,8 +64,7 @@ class SigInViewController: UIViewController, SigInView  {
     }
     
     @IBAction func sigUpAction(_ sender: Any) {
-        guard let email = emailTextField.text , let password = passWordTextField.text else {return}
-//        presenster.sigUpPresenter(email: email, password: password)
+        
     }
     
     @IBAction func forgotAction(_ sender: Any) {
