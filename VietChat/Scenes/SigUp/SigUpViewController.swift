@@ -54,6 +54,7 @@ class SigUpViewController: UIViewController , SigUpView {
     }
     
     @IBAction func sigUpButtonAction(_ sender: Any) {
+        view.endEditing(true)
         guard let email = emailTextField.text , let password = passwordTextField.text, let name = nameTextField.text else {return}
         presenter.sigUpPresenter(email: email, password: password, name: name)
     }

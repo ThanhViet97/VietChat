@@ -38,19 +38,19 @@ class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
         super.viewWillAppear(animated)
         self.navigationItem.title = "VietChat"
         titleColerNavigationBar()
-        prepareUI()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        prepareUI()
     }
     
     // MARK: - Method
     func prepareUI() {
         shadowInputView.dropShadow(color: .black, opacity: 2, offSet: CGSize(width: -1, height: 1), radius: 2, scale: true)
-        self.hideKeyboardWhenTappedAround()
         // MARK: - set placeholder
         inputTextView.text = "massage"
         inputTextView.textColor = UIColor.lightGray
         sentButton.activated(false)
+//        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: - Edit placeholder textView
@@ -61,11 +61,11 @@ class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
             sentButton.activated(false)
         }
     }
-    
+
     func textViewDidChange(_ textView: UITextView) {
-        inputTextView.text.isEmpty ? sentButton.activated(false) : sentButton.activated(true)
+        sentButton.activated(!inputTextView.text.isEmpty)
     }
-    
+
     func textViewDidEndEditing(_ textView: UITextView) {
         if inputTextView.text.isEmpty {
             inputTextView.text = "massage"
@@ -94,9 +94,11 @@ class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
     
     // MARK: - IBAction
     @IBAction func sendAction(_ sender: Any) {
-          self.hideKeyboardWhenTappedAround()
+        view.endEditing(true)
         guard let contentMessage = inputTextView.text else {return}
         presenter.sendPresenter(content: contentMessage)
+        inputTextView.text = "massage"
+        inputTextView.textColor = UIColor.lightGray
     }
     
     @IBAction func plusAction(_ sender: Any) {
@@ -121,5 +123,11 @@ extension ChatViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath ) as! ChatTableViewCell
         return cell
+    }
+}
+
+extension ChatViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.hideKeyboardWhenTappedAround()
     }
 }

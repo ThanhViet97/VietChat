@@ -16,8 +16,6 @@ protocol ChatReponsitory {
 
 class ChatReponsitoryImpl: ChatReponsitory {
    
-    
-    
     static let shared: ChatReponsitory = ChatReponsitoryImpl()
     private init() { }
     

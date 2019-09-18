@@ -10,8 +10,6 @@ import UIKit
 
 class SigInViewController: UIViewController, SigInView  {
     
-    
-    
     // MARK: - variable
     var presenster : SigInPresenter!
     
@@ -54,7 +52,8 @@ class SigInViewController: UIViewController, SigInView  {
 
     // MARK: - IBAction
     @IBAction func sigInAction(_ sender: Any) {
-         guard let email = emailTextField.text , let password = passWordTextField.text else {return}
+        view.endEditing(true)
+        guard let email = emailTextField.text , let password = passWordTextField.text else {return}
         presenster.sigInPresenter(email: email, password: password)
     }
     
