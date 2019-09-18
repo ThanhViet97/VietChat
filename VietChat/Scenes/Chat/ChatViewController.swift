@@ -93,6 +93,7 @@ class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
     func fetchDataView(chat: [Chat]) {
         self.chats = chat
         self.tableView.reloadData()
+        scrollToBottomOfChat()
     }
     
     func addChatView(chat: Chat) {
@@ -106,6 +107,11 @@ class ChatViewController: UIViewController, UITextViewDelegate, ChatView {
         self.chat = chat
     }
     
+    func scrollToBottomOfChat(){
+        guard let chatvalue = self.chats else {return}
+        let indexPath = IndexPath(row: chatvalue.count - 1, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+    }
     // MARK: - IBAction
     @IBAction func sendAction(_ sender: Any) {
         view.endEditing(true)
@@ -137,11 +143,22 @@ extension ChatViewController: UITableViewDataSource {
         
         let userID = UserDefaults.standard.string(forKey: IDUserDefault.keyIDUser)
         let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath ) as! ChatTableViewCell
-        cell.message.text = chats[indexPath.row].content
-        cell.messageSend.backgroundColor = chats[indexPath.row].userIDSend ==  userID ? #colorLiteral(red: 0.0009903412355, green: 0.1723831766, blue: 0.9108585049, alpha: 1) : #colorLiteral(red: 0.9647058824, green: 0.968627451, blue: 0.9725490196, alpha: 1)
-        cell.message.textColor = chats[indexPath.row].userIDSend == userID ? #colorLiteral(red: 0.9647058824, green: 0.968627451, blue: 0.9725490196, alpha: 1) : #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        cell.message.textAlignment = chats[indexPath.row].userIDSend == userID ? NSTextAlignment.right : NSTextAlignment.left
-        cell.user_id.text = chats[indexPath.row].userSend.name
+        
+        cell.messageSendLable.text =  chats[indexPath.row].content
+        cell.messageReseiveLable.text =  chats[indexPath.row].content
+        cell.messageSendView.isHidden = chats[indexPath.row].userIDSend !=  userID
+        cell.messageReseiveView.isHidden = chats[indexPath.row].userIDSend ==  userID
+        cell.messageSendView.backgroundColor =  #colorLiteral(red: 0.0009903412355, green: 0.1723831766, blue: 0.9108585049, alpha: 1)
+        cell.messageReseiveView.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.968627451, blue: 0.9725490196, alpha: 1)
+        cell.messageSendLable.textColor = #colorLiteral(red: 0.9647058824, green: 0.968627451, blue: 0.9725490196, alpha: 1)
+        cell.messageReseiveLable.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        cell.userIdLable.text = chats[indexPath.row].userSend.name
+        cell.userIdLable.textAlignment = chats[indexPath.row].userIDSend == userID ? NSTextAlignment.right : NSTextAlignment.left
+//         guard let chats = chats else {
+//            return cell
+//        }
+//        let indexPath = IndexPath(row: chats.count , section: 0)
+//        tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
         return cell
     }
 }
