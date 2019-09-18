@@ -14,14 +14,21 @@ class ChatTableViewCell: UITableViewCell {
     
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var user_id: UILabel!
+    @IBOutlet weak var messageSend: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        messageSend.layer.borderWidth = 1
+        messageSend.layer.borderColor =  #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        messageSend.layer.cornerRadius = 15
+        messageSend.clipsToBounds = true
+        message.intrinsicContentSize.width
     }
 
+ 
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+        
     }
 }

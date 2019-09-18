@@ -48,6 +48,18 @@ struct Chat {
         self.userSend = userSend
     }
     
+    init?(snapshot: DataSnapshot) {
+        guard let value = snapshot.value as? [String: AnyObject],
+            let userIDSend = value["userIDSend"] as? String,
+            let content  = value["content"] as? String ,
+            let createAt  = value["createAt"] as? String else
+        {return nil}
+        self.userIDSend = userIDSend
+        self.content = content
+        self.createAt = createAt
+        self.userSend = User(snapshot: snapshot.childSnapshot(forPath: "userSend"))!
+    }
+    
     func toAnyObject() -> Any {
         return [
             "content" : content,

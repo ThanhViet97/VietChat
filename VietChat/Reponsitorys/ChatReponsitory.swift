@@ -11,11 +11,13 @@ import Firebase
 
 protocol ChatReponsitory {
     func creaeteNewMessage(uid: String, contentMessage: String, name: String, createAt: String)
-    func fetchData()
+    func fetchData(onSuccess : @escaping (_ listData : [Chat]?) -> Void )
+    func addChatData(onSuccess : @escaping (_ listData : Chat?) -> Void)
+    func removedChatData(onSuccess : @escaping (_ listData : Chat?) -> Void)
 }
 
 class ChatReponsitoryImpl: ChatReponsitory {
-   
+    
     static let shared: ChatReponsitory = ChatReponsitoryImpl()
     private init() { }
     
@@ -27,12 +29,38 @@ class ChatReponsitoryImpl: ChatReponsitory {
         ref.child("Chats").child(chatID).setValue(chat.toAnyObject())
     }
     
-    func fetchData() {
+    func fetchData(onSuccess : @escaping (_ listData : [Chat]?) -> Void ) {
         let ref = Database.database().reference()
         ref.child("Chats").observe(.value) { (snapshot) in
             // Get user value
-            let value = snapshot.value as? NSDictionary ?? [:]
+            var chats = [Chat]()
+            for child in snapshot.children {
+                if let snapshot = child as? DataSnapshot {
+                    let chat = Chat(snapshot: snapshot)
+                    chats.append(chat!)
+                }
+                else{
+                    print("fail")
+                }
+            }
+            onSuccess(chats)
         }
-        
     }
+    
+    func addChatData(onSuccess : @escaping (_ listData : Chat?) -> Void) {
+        let ref = Database.database().reference()
+        ref.child("Chats").observe(.childAdded) { (snapshot) in
+            let chat = Chat(snapshot: snapshot)
+            onSuccess(chat)
+        }
+    }
+    
+    func removedChatData(onSuccess : @escaping (_ listData : Chat?) -> Void){
+        let ref = Database.database().reference()
+        ref.child("Chats").observe(.childRemoved) { (snapshot) in
+            let chat = Chat(snapshot: snapshot)
+            onSuccess(chat)
+        }
+    }
+    
 }

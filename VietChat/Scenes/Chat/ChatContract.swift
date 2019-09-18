@@ -9,11 +9,16 @@
 import UIKit
 
 protocol ChatView: class{
-    func sendView()
+    func fetchDataView(chat: [Chat] )
+    func addChatView(chat: Chat )
+    func removedChatView(chat: Chat )
 }
 
 protocol ChatPresenter: class {
     func sendPresenter(content: String)
+    func fetchPresenter()
+    func addCharPresenter()
+    func removedChatPresenter()
 }
 
 
