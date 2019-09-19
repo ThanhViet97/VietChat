@@ -12,9 +12,9 @@ import Firebase
 class SigInPresenterImpl: SigInPresenter  {
     
     weak var view: SigInView!
-    var userRepository: UserRepository!
+    var userRepository: UserRepository
     
-    init(view: SigInView,userRepository: UserRepository ) {
+    init(view: SigInView, userRepository: UserRepository ) {
         self.view = view
         self.userRepository = userRepository
     }

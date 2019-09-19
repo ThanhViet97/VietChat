@@ -17,7 +17,7 @@ extension UIViewController {
     }
 
     func titleColerNavigationBar() {
-        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.init(cgColor: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))]
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.init(cgColor: #colorLiteral(red: 0.3792800903, green: 0.4409770966, blue: 0.9148362279, alpha: 1))]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
     // MARK: - Show Alert
