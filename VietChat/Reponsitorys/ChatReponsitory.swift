@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RxSwift
 
 protocol ChatReponsitory {
     func creaeteNewMessage(uid: String, contentMessage: String, name: String, createAt: String)
@@ -62,5 +63,4 @@ class ChatReponsitoryImpl: ChatReponsitory {
             onSuccess(chat)
         }
     }
-    
 }

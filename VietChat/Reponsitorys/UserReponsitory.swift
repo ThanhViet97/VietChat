@@ -10,18 +10,23 @@ import UIKit
 import FirebaseAuth
 import FirebaseCore
 import FirebaseDatabase
+import RxSwift
 
 protocol UserRepository {
-    func createNewUser(uid: String , email: String , name: String)
+    func sigUp(uid: String , email: String , name: String)
     func fetchUserDefaut(uid: String)
+    
+    func sigUpRx(password: String , email: String , name: String) -> Completable
 }
 
 class UserRepositoryImpl: UserRepository {
-  
+    
+    
+    
     static let shared: UserRepository = UserRepositoryImpl()
     private init() { }
     
-    func createNewUser(uid: String, email: String, name: String) {
+    func sigUp(uid: String, email: String, name: String) {
         let ref = Database.database().reference().root
         let user = User(email: email, name: name)
         ref.child("users").child(uid).setValue(user.toAnyObject()) { (error, ref) in
@@ -32,6 +37,29 @@ class UserRepositoryImpl: UserRepository {
             else {
                 print("success")
             }
+        }
+    }
+    
+    func sigUpRx(password: String , email: String, name: String) -> Completable {
+        return Completable.create { (completable) -> Disposable in
+            Auth.auth().createUser(withEmail: email, password: password) { (users, error) in
+                if let error = error {
+                    return completable(.error(error))
+                } else {
+                    if let currentUser = Auth.auth().currentUser {
+                        currentUser.sendEmailVerification(completion: { (error) in
+                            try! Auth.auth().signOut()
+                            if error == nil {
+                                let ref = Database.database().reference().root
+                                let user = User(email: email, name: name)
+                                ref.child("users").child((users?.user.uid)!).setValue(user.toAnyObject())
+                            }
+                        })
+                    }
+                    completable(.completed)
+                }
+            }
+            return Disposables.create()
         }
     }
     
